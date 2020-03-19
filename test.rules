@@ -1,5 +1,5 @@
 # Copyright 2020 Jason Xu
 #
-# This file may be a fail rule file. Be careful while using
+# This file may be a fail rule file. Be careful while using.
 
 alert tcp $EXTERNAL_NET any -> $HOME_NET 1080 (msg:"TEST ALERT";flags:U;content:"hostip";offset:10;depth:10;nocase;)
